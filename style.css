@@ -15,6 +15,12 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media (width < 450px){
+    body{
+       justify-content: flex-start;
+       padding-top: 10%;
+    }
+}
 
 .container{
     border: 2px solid #3f3f3f;
