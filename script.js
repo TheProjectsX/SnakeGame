@@ -26,11 +26,11 @@ const highestScore = document.getElementById("highestScore");
 // Check and Set game High Score
 function setHighScore(check) {
     if (!(check)) {
-        highScore = localStorage.getItem("highScore") ?? 0;
+        highScore = localStorage.getItem("snakeGameHighScore") ?? 0;
     } else {
         if (score > highScore) {
             highScore = score;
-            localStorage.setItem("highScore", highScore);
+            localStorage.setItem("snakeGameHighScore", highScore);
         }
     }
 
@@ -257,6 +257,3 @@ function initGame() {
 
 setGameStateTo0();
 changeFoodPosition();
-
-
-
